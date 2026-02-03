@@ -26,6 +26,8 @@ export const Colors = {
         brightMagenta: "\x1b[95m",
         brightCyan: "\x1b[96m",
         brightWhite: "\x1b[97m",
+        matrixGreen: "\x1b[38;5;34m",
+        matrixGreenStrong: "\x1b[2;32m"
     },
     bg: {
         black: "\x1b[40m",
