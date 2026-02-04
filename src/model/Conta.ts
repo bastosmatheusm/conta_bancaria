@@ -109,8 +109,7 @@ export class Conta{
         console.log(`Número da agência: ${this._agencia}`);
         console.log(`Nome do titular: ${this._titular}`);
         console.log(`Tipo da conta: ${tipo}`);
-        console.log(`Saldo: R$${this._saldo.toFixed(2)}`);
-        console.log("*****************************************************\n",
-                    Colors.reset);
+        console.log(`Saldo: R$${this.saldo.toFixed(2)}`);
+        console.log("*****************************************************\n");
     }
 }
