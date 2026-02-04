@@ -101,14 +101,16 @@ export class Conta{
                 break;
         }
 
-        console.log("\n*****************************************************");
+        console.log(Colors.fg.matrixGreenStrong,
+                    "\n*****************************************************");
         console.log("                    DADOS DA CONTA                     ");
         console.log("*****************************************************");
-        console.log(`Número da conta: ${this.numero}`);
-        console.log(`Número da agência: ${this.agencia}`);
-        console.log(`Nome do titular: ${this.titular}`);
+        console.log(`Número da conta: ${this._numero}`);
+        console.log(`Número da agência: ${this._agencia}`);
+        console.log(`Nome do titular: ${this._titular}`);
         console.log(`Tipo da conta: ${tipo}`);
-        console.log(`Saldo: R$${this.saldo.toFixed(2)}`);
-        console.log("*****************************************************\n");
+        console.log(`Saldo: R$${this._saldo.toFixed(2)}`);
+        console.log("*****************************************************\n",
+                    Colors.reset);
     }
 }

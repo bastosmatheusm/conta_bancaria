@@ -1,6 +1,6 @@
-import rl from "readline-sync";
 import { Colors } from './src/util/Colors';
 import { Conta } from "./src/model/Conta";
+import { Input } from "./src/util/Input";
 
 export function main() {
     
@@ -46,7 +46,9 @@ export function main() {
         console.log("                                                     ", 
         Colors.reset);
 
-        opcao = rl.questionInt(Colors.fg.matrixGreenStrong + "Entre com a opção desejada: " + Colors.reset);
+        console.log(Colors.fg.matrixGreenStrong + "Entre com a opção desejada: " + Colors.reset);
+        opcao = Input.questionInt("");
+        //opcao = Input.questionInt(Colors.fg.matrixGreenStrong + "Entre com a opção desejada: " + Colors.reset);
 
     
         if (opcao === 0) {
@@ -120,7 +122,7 @@ function sobre(): void {
 
 function keyPress(): void {
     console.log(Colors.fg.matrixGreenStrong,"\nPressione enter para continuar...", Colors.reset);
-    rl.prompt();
+    Input.prompt();
 }
 
 main();
