@@ -1,27 +1,11 @@
 import { Colors } from './src/util/Colors';
 import { Conta } from "./src/model/Conta";
 import { Input } from "./src/util/Input";
+import { ContaCorrente } from './src/model/ContaCorrente';
 
 export function main() {
     
     let opcao: number;
-
-    //Instanciar objetos da Classa Conta
-    const c1 = new Conta(1, 1234, "Sofia", 1, 100000.00);
-
-    //Testes do Método Sacar
-    console.log("Sacar R$100,00: ", c1.sacar(100.00));
-    console.log("Sacar R$200.000,00: ", c1.sacar(200000.00));
-    console.log("Sacar R$0,00: ", c1.sacar(0.00));
-
-    //Testes do Método Depositar
-    console.log("Depositar R$0,00: ");
-    c1.depositar(-10.00);
-
-    console.log("Depositar R$500,00: ");
-    c1.depositar(500.00);
-
-    c1.visualizar();
 
     while (true) {
         
@@ -48,8 +32,6 @@ export function main() {
 
         console.log(Colors.fg.matrixGreenStrong + "Entre com a opção desejada: " + Colors.reset);
         opcao = Input.questionInt("");
-        //opcao = Input.questionInt(Colors.fg.matrixGreenStrong + "Entre com a opção desejada: " + Colors.reset);
-
     
         if (opcao === 0) {
             console.log(Colors.fg.matrixGreenStrong, "\nBanco do Brazil com Z - O seu Futuro começa aqui!");

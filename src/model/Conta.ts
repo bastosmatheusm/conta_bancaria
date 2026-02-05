@@ -1,6 +1,6 @@
 import { Colors } from "../util/Colors";
 
-export class Conta{
+export abstract class Conta{
     
     //Atributos da Classe
     private _numero: number;
